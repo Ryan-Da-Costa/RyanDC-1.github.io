@@ -1,2 +1,2 @@
-References : HTML 5up
+References : HTML 5UP
 
