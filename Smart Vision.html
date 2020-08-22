@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Smart Vision for the visually impaired</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Smart Vision for the visually impaired</h1>
+						<p></p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Smart Vision for the visually impaired</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Ryan Da Costa</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://linkedin.com/in/RyanDC1" class="icon brands fa-linkedin"><span class="label">Linkdin</span></a></li>
+							<li><a href="https://github.com/RyanDC1/Chat-Application.git" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+							<a href="skills.html" class="image main"><img src="images/c.png" alt=""/></a>
+						<!-- Featured Post -->
+							<article class="post featured2">
+
+								<p style="text-align: left;"><h2 style="text-align: center">Abstract</h2>
+										This device will help a visually impaired person to navigate in the surrounding environment using object recognition, obstacle detection and face recognition. 
+										The device will communicate with the user using beep sounds or vibrational motion and speech output. It can also detect and recognise people
+										</p><br>
+
+								<p style="text-align: left;"><h2 style="text-align: center">Working</h2>
+									The device consists of three modules:<br>
+									1) Face recognition module<br>
+									2) Object recognition module<br>
+									3) Obstacle detection module<br>
+									The face recognition module uses HOG-SVM algorithm to detect a persons face and is started by the object recognition algorithm once a person is detected.
+									The deice outputs the name of the person using a speech output. device also allows the user to store new faces by pressing a button which captures a
+									set of images of the contacts face and stores it in memory. The stored images are than trained using the algorithm. The face recognition module can help the
+									user to identify and interact with people.<br>
+									The object recognition module uses YOLO algorithm to detect and recognise objects. Once the device recognises an object present in the users path, it outputs 
+									the name of the object as a speech output. The user will be aware of all the object in their surrounding and will be able to navigate around them and interact with them.<br>
+									The obstacle detection module is implemented using an ultrasonic sensor and an ESP-32 microcontroller. The ultrasonic sensors are used to detect any obstacles that
+									may be present in the users path. Once the threshold distance is reached, it will output a beep sound/vibration indicating that there is an obstacle.<br>
+									<br>
+									The algorithms are implemented on a raspberry Pi. A camera connected to the raspberry Pi will deliver the input feed for the algorithm. The device will consist of 
+									a wearable device along with a walking stick. The wearable device will house the camera which will be used for face and object recognition and the walking stick 
+									will house the ultrasonic sensors for obstacle detection.
+									</p><br>
+												
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+					
+						<section class="split contact">
+
+							<section>
+				
+								<ul class="icons alt">
+									<li><a href="https://linkedin.com/in/RyanDC1" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/RyanDC1/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
