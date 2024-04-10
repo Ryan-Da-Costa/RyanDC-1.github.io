@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>NLP Q & A module</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>NLP Q & A module</h1>
+						<p></p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">NLP Q & A module</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Ryan Da Costa</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://linkedin.com/in/RyanDC1" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/RyanDC1/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+							<a href="nlp.html" class="image main"><img src="images/nlp.jpg" alt=""/></a>
+						<!-- Featured Post -->
+							<article class="post featured2">
+									<p style="text-align: left;"><h2 style="text-align: center">Abstract</h2>
+										A Natural Language Processing module in react that can extract answers from a given paragraph using the BERT model.
+										</p><br>
+
+								<h2 style="text-align: center">Working</h2>
+									BERT (Bidirectional Encoder Representations from Transformers) is based on a deep learning model called Transformers. As opposed to processing each word in a sentence sequentially, the BERT model processes the entire sentence using transformers at once allowing it to learn the context of a given word. In language processing the meaning of a word in a given sentence depends on the order in which the words are processed, models such as RNN's processed these words sequentially and hence would lose the context or meaning of a word once it completed processing the entire sentence. Transformers overcome this problem by processing the words in a sentence parallelly.
+<br/>
+Transformer use the following mechanisms to learn the context of a word in a given sentence or paragraph
+<br/>
+1. Positional encoding
+<br/>
+2. Attention
+<br/>
+3. Self-attention
+<br/>
+<ins><b>Positional encoding</b></ins> attaches a number or index to each word in a sentence according to the order in which they appear before the sentence is processed by the neural network. The transformer learns how to interpret these positional encoding when being trained on text data.
+<br/>
+<ins><b>Attention</b></ins> allows a language model to get the context of a given word by parallelly processing every word in the sentence to co-relate the word with the sentence. It learns the grammar rules while training the model on a dataset, and learns how to interpret the indexes or positional encodings in the new sentence.
+<br/>
+<ins><b>Self-Attention</b></ins> The attention mechanism of a transformer is useful when performing a task such as translation, attention will allow the model to co-relate words from one language to words of another language and translate while maintaining the grammar rules of the language in which the text is to be translated in. However in the case of a question and answer module, we are more interested in learning the meaning and patterns of words in a sentence, this is achieved using the self attention mechanism which can distinguish between ambiguous words in a paragraph
+<br/>
+for example:
+<br/>
+  if we have two sentences
+  <br/>
+  1. "Server, can I please get the check"
+  <br/>
+  2. "Looks like the server is down today"
+  <br/>
+The self attention mechanism will co-relate the word server with check and be able to distinguish between a human server and a machine. In the second sentence, it will co-relate the word server with down and determine that this server is a machine.
+For better accuracy the model will need to be trained on a dataset of a large amount of data for better co-relation.
+									</p><br>
+
+								<p style="text-align: left;"><h2 style="text-align: center">Technologies used</h2>
+									React - open-source front-end JavaScript library.
+                                    Tensorflow JS - library for machine learning in JavaScript
+									</p><br>
+									
+								
+							</article>
+
+						
+
+					
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+					
+						<section class="split contact">
+
+							<section>
+				
+								<ul class="icons alt">
+									<li><a href="https://linkedin.com/in/RyanDC1" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/RyanDC1/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
