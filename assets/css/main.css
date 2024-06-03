@@ -4722,12 +4722,9 @@ img {
     text-align: left;
 }
 
-.certifications-card .description > span{
-	height: 24px;
-}
-
 .certifications-card .description .title{
 	font-weight: 600;
+	height: 35px;
 }
 
 .certifications-card .description .title a {
@@ -4737,4 +4734,5 @@ img {
 
 .certifications-card .description .issuer {
 	color: #a8a8a8;
+	font-size: medium;
 }
