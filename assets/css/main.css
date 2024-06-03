@@ -3778,9 +3778,6 @@ input, select, textarea {
 			text-align: center;
 		}
 
-		#main > .post {
-			padding: 8rem 8rem 6rem 8rem ;
-		}
 
 			#main > .post header.major > .date {
 				margin-top: -2rem;
@@ -4694,4 +4691,50 @@ input, select, textarea {
 img {
 	max-height: 800px;
 	object-fit: contain;
+}
+
+.mr-4 {
+	margin-right: 4px;
+}
+
+
+.certifications-card {
+	display: flex;
+	border: 1px solid;
+    padding: 14px;
+    border-color: #e6e6e6;
+	margin-bottom: 8px;
+}
+
+.certifications a:hover{
+	border-bottom-color: #e6e6e6 !important;
+	color: #1c4a7e !important;
+	box-shadow: 2px 2px 3px 0px #e6e6e6;
+}
+
+.certifications-card .issuer-image {
+	max-width: 60px;
+	margin-right: 12px;
+}
+.certifications-card .description {
+	display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.certifications-card .description > span{
+	height: 24px;
+}
+
+.certifications-card .description .title{
+	font-weight: 600;
+}
+
+.certifications-card .description .title a {
+	color: #212931 !important;
+	border-bottom: none !important;
+}
+
+.certifications-card .description .issuer {
+	color: #a8a8a8;
 }
